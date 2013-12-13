@@ -1,0 +1,2 @@
+We only used one source which was [http://www.johnloomis.org/digitallab/audio/audio3/audio3.html audio3] off the [http://www.johnloomis.org john Loomis Website].
+In his code the sound was only produced by one speaker. We made both speakers to produce sound and also changed the frequency every half second automatically.
