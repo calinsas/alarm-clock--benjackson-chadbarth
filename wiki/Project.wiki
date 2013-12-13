@@ -10,13 +10,13 @@ We decided to make an alarm clock after talking about how hard it was to wake up
 
 With a single DE2 board we were able to accomplish a real world working alarm clock with the seven segment display to show the current time and the time to wake up. The user can toggle between the real time and alarm set time using a switch. The user can also set the clock or alarm by incrementing the hours or the minutes. There is also a button that will reset the alarm, turning off the sound, and allowing the alarm to go off the next time the alarm time is reached.
 
-Some of the challenges we faced with writing the clock was to make the typical AM and PM clock that we use in the United States instead of the 24 hour clock that the rest of the world uses. You can watch the FPGA board in action in this [http://www.youtube.com/watch?v=f2cwhybu53I video].
+Some of the challenges we faced with writing the clock was to make the typical AM and PM clock that we use in the United States instead of the 24 hour clock that the rest of the world uses. You can watch the FPGA board in action in this [http://www.youtube.com/watch?v=f2cwhybu53I video Demonstration].
 
 Some code we had to use from [http://www.johnloomis.org John Loomis's website]. The code we used from him can be found [http://www.johnloomis.org/digitallab/audio/audio3/audio3.html here]. His project took input from the Switches and outputted a signal to the speakers. In his original project the audio was only sent to the right speakers. We changed the value of the sound frequency and then switched between each frequency every half second to produce the alarm sound.
 We didn't use the conventional use of a state machine made out of case statements instead we used if statements which could be harder for someone who once to use our code. Nonetheless, we are still using a state machine in our code. So looking at the code could be confusing at first. We tried to comment for someone to more understand.
 
 ===Conclusion=== 
-After completing this project we have a new understanding of the DE2 board and what it can fully do. Understanding how the hardware can produce sound and how we can make a fully functional clock was fun to do and learned a lot on how to code hardware and work with Verilog. Working someone elses code and figuring out what does what made me better at reading code which we think is very important to learn in later years in life and careers.
+After completing this project we have a new understanding of the DE2 board and what it can fully do. Understanding how the hardware can produce sound and how we can make a fully functional clock was fun to do and learned a lot on how to code hardware and work with Verilog. Looking at someones code and figuring out what does what made us better at reading code which we think is very important to learn in later years in life and careers.
 
 
 ===Controls===
