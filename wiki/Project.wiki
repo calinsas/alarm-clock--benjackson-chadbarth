@@ -25,3 +25,6 @@ Key2 - Changes the minutes.
 Key1 - Dismisses the alarm.
 
 Key0 - Resets the Current time and Alarm time.
+
+====NOTE====
+You can download the file in the source tab.
