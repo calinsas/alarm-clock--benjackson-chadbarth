@@ -1,6 +1,6 @@
 =Description=
 
-For our final project we decided to make an alarm clock with the DE2 board. We are using the HEX to display the current time and the set time to wake up. We wrote 100% of the code for the alarm clock that displays,  to the KEX display.
+For our final project we decided to make an alarm clock with the DE2 board. We are using the HEX to display the current time and the set time to wake up. We wrote 100% of the code for the alarm clock that displays,  to the HEX display.
 
 ==Background==
 
