@@ -15,6 +15,7 @@ Some of the challenges we faced with writing the clock was to make the typical A
 Some code we used from [http://www.johnloomis.org John Loomis's website]. The code we used from him can be found [http://www.johnloomis.org/digitallab/audio/audio3/audio3.html here]. His project took input from the switches and outputted a signal to only one speaker. In his original project the audio was only sent to the right speakers. We changed the value of the sound frequency and then switched between each frequency every half second to produce the sound of an alarm. In his code it had a lot that we didn't need so we had to figure out what values did what and implement the code into ours so when the alarm time is reached the control bit would make the alarm sound.
 
 We didn't use the conventional use of a state machine made out of case statements instead we used if statements which could be harder for someone who wants to use our code. Nonetheless, we are still using a state machine for the alarm clock in our code. So looking at the code could be confusing at first. We tried to comment the code for someone to  understand.
+=====Video=====
 You can watch the FPGA board in action in this [http://www.youtube.com/watch?v=f2cwhybu53I Video Demonstration].
 
 ===Conclusion=== 
