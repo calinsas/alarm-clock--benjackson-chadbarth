@@ -1,0 +1,37 @@
+# Description #
+
+For our final project we decided to make an alarm clock with the DE2 board. We are using the Seven Segment Displays to display the current time and the alarm time to wake up. We wrote 100% of the code for the alarm clock that displays, to the HEX display.
+
+## Background ##
+
+We decided to make an alarm clock after talking about how hard it was to wake up for morning classes. We were also talking about making our own alarm clock with an Arduino as a project on our spare time and if we could make an alarm clock on an FPGA we could definitely make one from an Arduino.
+
+## Details ##
+
+With a single DE2 board we were able to accomplish a real world working alarm clock with the seven segment display to show the current time and the alarm time to wake up. The user can toggle between the real time and alarm set time using a switch. The user can also set the clock or alarm by incrementing the hours or the minutes. There is also a button that will reset the alarm for turning off the sound, and allowing the alarm to go off the next time the alarm time is reached.
+
+Some of the challenges we faced with writing the clock was to make the typical AM and PM clock that we use in the United States instead of the 24 hour clock that the rest of the world uses. The AM PM was hard because we had to make it switch between AM and PM when the clock 12 o'clock. One bug we had was the AM and PM would switch every clock cycle which had to be fixed and we finally made it show AM or PM for 12 hours. Another problem we reached was when we wanted to change the time, every time we clicked the button it would cycle every clock cycle until you depressed it so it would end up on a random number. This was eventually fixed by making a count for the time change.
+
+Some code we used from [John Loomis's website](http://www.johnloomis.org). The code we used from him can be found [here](http://www.johnloomis.org/digitallab/audio/audio3/audio3.html). His project took input from the switches and outputted a signal to only one speaker. In his original project the audio was only sent to the right speakers. We changed the value of the sound frequency and then switched between each frequency every half second to produce the sound of an alarm. In his code it had a lot that we didn't need so we had to figure out what values did what and implement the code into ours so when the alarm time is reached the control bit would make the alarm sound.
+
+We didn't use the conventional use of a state machine made out of case statements instead we used if statements which could be harder for someone who wants to use our code. Nonetheless, we are still using a state machine for the alarm clock in our code. So looking at the code could be confusing at first. We tried to comment the code for someone to  understand.
+##### Video #####
+You can watch the FPGA board in action in this [Video Demonstration](http://www.youtube.com/watch?v=f2cwhybu53I).
+
+### Conclusion ###
+After completing this project we have a new understanding of the DE2 board and what it can fully do. Understanding how the hardware can produce sound and how we can make a fully functional clock was fun to do and learned a lot on how to code hardware and work with Verilog. Looking at someones code and figuring out what it does made us better at reading code which we think is very important to learn in later years in life and careers.
+
+
+### Controls ###
+SW0 - Switches the current time and alarm set time.
+
+Key3 - Changes the hours.
+
+Key2 - Changes the minutes.
+
+Key1 - Dismisses the alarm.
+
+Key0 - Resets the Current time and Alarm time.
+
+#### NOTE ####
+You can download the file in the source tab.
